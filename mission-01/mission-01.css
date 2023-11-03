@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+body,
+section,
+article,
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  width: 502px;
+  font-weight: 700;
+}
+section,
+article {
+  width: 100%;
+  gap: 16px;
+  position: relative;
+}
+.container {
+  width: 243px;
+  height: 310px;
+  background-color: white;
+  border: 1px solid #c4c4c4;
+}
+.container:hover {
+  border: 1px solid #0074e9;
+}
+.long {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.cover {
+  width: 50%;
+  gap: 13px;
+  flex-direction: column;
+}
+h1 {
+  font-size: 24px;
+}
+.long .product {
+  width: 222px;
+}
+button {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button::before {
+  content: '>';
+  transition: all 0.3s;
+}
+button:active:after,
+button:hover:after {
+  width: 112px;
+  height: 42px;
+  line-height: 42px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '구매하기 >';
+  background-color: #0074e9;
+  word-spacing: 16px;
+}
+article {
+  flex-direction: column;
+  gap: 3px;
+}
+h2 {
+  font-size: 18px;
+}
+article .product {
+  width: 195px;
+  height: 195px;
+}

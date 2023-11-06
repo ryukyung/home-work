@@ -1,55 +1,68 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
   width: 100vw;
   height: 100vh;
-}
-body,
-section,
-article,
-.cover {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  color: #4e4e4e;
 }
 main {
   width: 502px;
-  font-weight: 700;
+  display: flex;
+  flex-direction: column;
 }
-section,
-article {
-  width: 100%;
-  gap: 16px;
-  position: relative;
-}
+
 .container {
-  width: 243px;
   height: 310px;
-  background-color: white;
+  width: 241px;
   border: 1px solid #c4c4c4;
+  position: relative;
 }
 .container:hover {
   border: 1px solid #0074e9;
 }
-.long {
+.double {
   width: 100%;
-  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
 }
 .cover {
+  display: flex;
   width: 50%;
-  gap: 13px;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  gap: 13px;
 }
-h1 {
-  font-size: 24px;
-}
-.long .product {
+.double.container .product {
   width: 222px;
+  height: 270px;
 }
-button {
+div.double {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.single {
+  text-align: center;
+  padding-top: 14px;
+}
+.single h2 {
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+
+a {
   width: 42px;
   height: 42px;
+  line-height: 42px;
+  text-align: center;
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -59,13 +72,15 @@ button {
   font-size: 14px;
   cursor: pointer;
   transition: all 0.3s;
+  text-decoration: none;
+  outline: none;
 }
-button::before {
+a::before {
   content: '>';
   transition: all 0.3s;
 }
-button:active:after,
-button:hover:after {
+a:active:after,
+a:hover:after {
   width: 112px;
   height: 42px;
   line-height: 42px;
@@ -75,15 +90,4 @@ button:hover:after {
   content: '구매하기 >';
   background-color: #0074e9;
   word-spacing: 16px;
-}
-article {
-  flex-direction: column;
-  gap: 3px;
-}
-h2 {
-  font-size: 18px;
-}
-article .product {
-  width: 195px;
-  height: 195px;
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./mission-02.css" />
+    <title>EDIYA COFFEE</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo-light.png" alt="" />
+      <ul>
+        <li><a href="/">이디야 디자인</a></li>
+        <li><a href="/">로그인</a></li>
+        <li><a href="/">회원가입</a></li>
+        <li><a href="/">이디야 음료</a></li>
+        <li><a href="/">이디야 뉴스</a></li>
+        <li><a href="/">매장찾기</a></li>
+      </ul>
+      <img src="./images/hamburger.png" class="hidden" />
+    </header>
+    <section class="login">
+      <div class="login-title">
+        <h1>로그인</h1>
+        <span class="large">Welcome, Ediya Cofffee</span>
+        <span class="small">이디야커피에 오신 것을 환영합니다.</span>
+      </div>
+      <div class="form-cover">
+        <form action="#">
+          <label for="email" class="email">이메일</label>
+          <div class="input-cover">
+            <input type="email" name="email" placeholder="이메일" required />
+            <img src="./images/warning.png" alt="" class="is--valid warning" />
+            <img
+              src="./images/check-mark.png"
+              alt=""
+              class="is--invalid check"
+            />
+          </div>
+          <span class="is--valid">
+            입력 방법이 잘못되었습니다. (예: user@domain.io)
+          </span>
+          <label for="password" class="password"></label>
+          <div class="input-cover password">
+            <input
+              type="password"
+              name="password"
+              placeholder="패스워드"
+              required
+            />
+            <img src="./images/warning.png" alt="" class="is--valid warning" />
+            <img src="./images/close-eye.png" alt="" class="is--show close" />
+            <img src="./images/eye.png" alt="" class="is--show" />
+          </div>
+          <span class="is--valid">
+            패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.
+          </span>
+          <label for="save-email">
+            <input type="checkbox" name="save-email" id="save-email" checked />
+            아이디 저장
+          </label>
+          <div class="button-cover">
+            <button>로그인</button>
+            <a href="/">회원가입</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

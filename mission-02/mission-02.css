@@ -102,6 +102,10 @@ header .hidden {
   font-size: 16px;
   outline: none;
   color: var(--whyte);
+  &.is--focus {
+    border-bottom: 1px solid var(--whyte-70);
+    color: var(--whyte-70);
+  }
 }
 
 .form-cover .input-cover img {
@@ -116,14 +120,18 @@ header .hidden {
 span {
   font-size: 12px;
   padding-left: 8px;
+  &.is--invalid {
+    display: none;
+  }
 }
 .form-cover input:not([type='checkbox']) {
   border: none;
   padding-bottom: 3px;
+  width: 95%;
 }
 .form-cover label[for='save-email'] {
   display: block;
-  width: 95%;
+
   margin-top: 14px;
   margin-bottom: 70px;
 }
@@ -158,6 +166,13 @@ input[id='save-email']:checked {
   border: none;
   cursor: pointer;
   background: var(--whyte) url(./images/right-arrow-blue.png) no-repeat 98% 50%;
+  &.is--invalid {
+    background: #d2d2d2 url(./images/right-arrow-amber.png) no-repeat 98% 50%;
+    color: var(--amber);
+  }
+  &.loading {
+    background: var(--whyte) url(./images/loading.png) no-repeat 98% 50%;
+  }
 }
 .button-cover a {
   background-color: inherit;
@@ -166,34 +181,36 @@ input[id='save-email']:checked {
   color: var(--whyte);
   background: url(./images/right-arrow-white.png) no-repeat 95% 50%;
 }
-button.loading {
-  background: var(--whyte) url(./images/loading.png) no-repeat 98% 50%;
-}
-/* change: is--focus */
-input.is--focus {
-  border-bottom: 1px solid var(--whyte-70);
-  color: var(--whyte-70);
-}
-/* change: is-valid: 경고 사라짐 */
-span.is--valid,
-img.is--valid.warning {
+.email img.check {
   display: none;
+  &.is--valid {
+    display: block;
+  }
 }
-img.is--valid.check {
+.email img.warning {
   display: block;
+  &.is--valid {
+    display: none;
+  }
 }
-button.is--invalid {
-  background: #d2d2d2 url(./images/right-arrow-amber.png) no-repeat 98% 50%;
-  color: var(--amber);
-}
-/* change: is--show:  */
-img.is--show {
-  display: block;
-}
-img.is--show.close {
+.password img.warning {
   display: none;
+  &.is--invalid {
+    display: block;
+  }
 }
-
+.password img.close-eye {
+  display: none;
+  &.is--close {
+    display: block;
+  }
+}
+.password img.eye {
+  display: none;
+  &.is--close {
+    display: block;
+  }
+}
 /* start: media */
 @media (max-width: 600px) {
   header {

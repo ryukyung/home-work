@@ -28,16 +28,12 @@
       <div class="form-cover">
         <form action="#">
           <label for="email" class="email">이메일</label>
-          <div class="input-cover">
+          <div class="input-cover email">
             <input type="email" name="email" placeholder="이메일" required />
-            <img src="./images/warning.png" alt="" class="is--valid warning" />
-            <img
-              src="./images/check-mark.png"
-              alt=""
-              class="is--invalid check"
-            />
+            <img src="./images/warning.png" class="is--invalid warning" />
+            <img src="./images/check-mark.png" class="is--invalid check" />
           </div>
-          <span class="is--valid">
+          <span class="is--invalid">
             입력 방법이 잘못되었습니다. (예: user@domain.io)
           </span>
           <label for="password" class="password"></label>
@@ -48,11 +44,11 @@
               placeholder="패스워드"
               required
             />
-            <img src="./images/warning.png" alt="" class="is--valid warning" />
-            <img src="./images/close-eye.png" alt="" class="is--show close" />
-            <img src="./images/eye.png" alt="" class="is--show" />
+            <img src="./images/warning.png" class="warning" />
+            <img src="./images/close-eye.png" class="is--close close-eye" />
+            <img src="./images/eye.png" class="eye" />
           </div>
-          <span class="is--valid">
+          <span class="is--invalid">
             패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.
           </span>
           <label for="save-email">

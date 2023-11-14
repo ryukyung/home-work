@@ -1,0 +1,45 @@
+:root {
+  /* Color styles */
+  --red: #e50914;
+  --red--100: rgba(250, 206, 208, 1);
+  --red--200: rgba(245, 157, 161, 1);
+  --red--300: rgba(239, 107, 114, 1);
+  --red--400: rgba(234, 58, 67, 1);
+  --red--500: rgba(229, 9, 20, 1);
+  --red--600: rgba(183, 7, 16, 1);
+  --red--700: rgba(137, 5, 12, 1);
+  --red--800: rgba(92, 4, 8, 1);
+  --red--900: rgba(46, 2, 4, 1);
+  --blue: #0071eb;
+  --green: #2ede75;
+  --black: #010101;
+  --gray: #757575;
+  --white: #ffffff;
+
+  /* Text-size styles */
+  --mobile-title: 30px;
+  --desktop-title: 60px;
+  --mobile-description-bold: 15px;
+  --mobile-description-bold: 13px;
+
+  --text--x-small: 12px;
+  --text--small: 14px;
+  --text--normal: 16px;
+  --text--large: 18px;
+  --text--x-large: 20px;
+  --text--x-small-bold: 12px;
+  --text--small-bold: 14px;
+  --text--normal-bold: 16px;
+  --text--large-bold: 18px;
+
+  --text--x-large-bold: 20px;
+  --title--x-small: 22px;
+  --title--small: 24px;
+  --title--normal: 28px;
+  --title--large: 34px;
+  --title--x-large: 48px;
+  --title--2x-large: 60px;
+
+  /* Effect styles */
+  --text--shadow--paragraph: 0px 2px 6px rgba(0, 0, 0, 0.55);
+}

@@ -1,6 +1,6 @@
-/* margin: top right bottom left */
 main {
   width: clamp(325px, 90%, 1200px);
+  margin: 60px 2em 0;
   text-align: center;
   color: var(--white);
   display: flex;
@@ -8,7 +8,6 @@ main {
   align-items: center;
   flex-flow: column wrap;
   gap: 28px;
-  margin: 60px 2em 0;
 }
 main h1 {
   width: 100%;
@@ -18,18 +17,17 @@ main h1 {
 }
 main span {
   color: var(--white);
-  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.55);
+  text-shadow: 0px 2px 6px var(--text--shadow--paragraph);
   font-weight: 700;
   line-height: 150%;
 }
 main form {
+  width: clamp(245px, calc(100% - 450px), 750px);
   display: flex;
-  justify-content: space-between;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   row-gap: 12px;
-  width: clamp(245px, calc(100% - 450px), 750px);
 }
 main form input,
 main form button {
@@ -37,12 +35,11 @@ main form button {
 }
 main form input {
   width: clamp(245px, 80%, 540px);
-  padding: 1em 0;
   height: 20px;
+  padding: 1em 0;
+  margin-bottom: 4px;
   border: none;
   outline: none;
-  height: 20px;
-  margin-bottom: 4px;
 }
 main form input::placeholder {
   padding-left: 20px;
@@ -52,19 +49,12 @@ main .button.right {
   height: 20px;
   line-height: 20px;
   padding: 0.65em 0;
+  background: var(--red--500);
   color: var(--white);
-  font-size: var(--title--x-small);
   font-size: clamp(12px, 16px, 20px);
   font-weight: 700;
-  background: var(--red--500);
 }
-main .button.right img {
-}
-/* mobile */
 @media (max-width: 375px) {
-  main form {
-    /* gap: 12px; */
-  }
   main form input,
   main form .button.right {
     border-radius: 30px;

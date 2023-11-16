@@ -65,8 +65,8 @@ header .select-cover {
     background: url(/mission-03/images/check.svg) no-repeat 20px 50%;
   }
 }
-.active {
-  display: initial !important;
+.select-cover .active {
+  display: initial;
 }
 .button {
   display: inline-block;

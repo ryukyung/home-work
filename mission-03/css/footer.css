@@ -27,7 +27,6 @@ footer .container:first-child ul {
   flex-wrap: wrap;
   row-gap: 16px;
   column-gap: 3px;
-  column-gap: 60px;
 }
 footer .container:first-child li {
   width: clamp(160px, 40%, 200px);

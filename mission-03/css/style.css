@@ -1,8 +1,0 @@
-@import './components.css';
-@import './theme.css';
-html {
-  font-size: 10px;
-}
-body {
-  background-color: lightblue;
-}

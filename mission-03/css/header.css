@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--black) url(../images/background.svg) no-repeat;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  background-size: cover;
+}
+header {
+  width: clamp(325px, 90%, 1280px);
+  text-align: center;
+  margin: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header svg {
+  width: clamp(80px, 30%, 140px);
+  & .logo-red {
+    fill: var(--red--500);
+  }
+}
+.select-cover {
+  width: 113px;
+  background: inherit;
+  color: var(--gray--500);
+  font-size: var(--text--normal);
+  border-radius: 2px;
+  border: 1px solid var(--gray--500);
+  position: relative;
+  cursor: pointer;
+  &:focus {
+    border: 3px solid var(--green--500);
+  }
+}
+header .select-cover {
+  margin-left: auto;
+}
+.select {
+  background: url(/mission-03/images/global.svg) no-repeat 0.5rem 45%,
+    url(/mission-03/images/toggle.svg) no-repeat calc(100% - 0.5rem) 45%;
+  padding: 0.5rem 0.8rem;
+}
+.select-cover ul {
+  background: var(--gray--100);
+  color: var(--black);
+  border-radius: 12px;
+  display: none;
+  padding: 0;
+  position: absolute;
+  top: -4px;
+  left: 2px;
+  z-index: 10;
+}
+.select-cover ul li {
+  list-style-type: none;
+  padding: 12px 34px;
+  margin: 0;
+  &:hover {
+    background: url(/mission-03/images/check.svg) no-repeat 20px 50%;
+  }
+}
+.active {
+  display: initial !important;
+}
+.button {
+  display: inline-block;
+  color: var(--white);
+  background-color: var(--red--500);
+  border: 3px solid transparent;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--red--600);
+    border: 3px solid transparent;
+  }
+  &:focus {
+    background-color: var(--red--500);
+    border: 3px solid var(--green--400);
+  }
+  &:disabled {
+    background-color: var(--gray--500);
+    border: 3px solid transparent;
+  }
+}
+.round {
+  width: 70px;
+  padding: 0.5rem 0.3rem;
+  border-radius: 4px;
+  margin-left: 0.3rem;
+}

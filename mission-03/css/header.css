@@ -42,8 +42,8 @@ header .select-cover {
   margin-left: auto;
 }
 .select {
-  background: url(/mission-03/images/global.svg) no-repeat 0.5rem 45%,
-    url(/mission-03/images/toggle.svg) no-repeat calc(100% - 0.5rem) 45%;
+  background: url(../images/global.svg) no-repeat 0.5rem 45%,
+    url(../images/toggle.svg) no-repeat calc(100% - 0.5rem) 45%;
   padding: 0.5rem 0.8rem;
 }
 .select-cover ul {
@@ -62,7 +62,7 @@ header .select-cover {
   padding: 12px 34px;
   margin: 0;
   &:hover {
-    background: url(/mission-03/images/check.svg) no-repeat 20px 50%;
+    background: url(../images/check.svg) no-repeat 20px 50%;
   }
 }
 .select-cover .active {

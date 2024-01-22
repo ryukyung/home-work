@@ -1,0 +1,67 @@
+.productCard {
+  width: 240px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  position: relative;
+}
+.thumbnail {
+  width: 240px;
+  height: 320px;
+}
+.brand {
+  color: var(--gray-400, #898989);
+  font-weight: 600;
+}
+.title {
+  color: var(--content, #333);
+  font-size: 16px;
+}
+.discountPercent {
+  color: var(--accent-yellow, #fa622f);
+  font-size: 21px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+.discountPrice {
+  color: var(--content, #333);
+  font-size: 21px;
+  font-weight: 600;
+}
+.regularPrice {
+  color: var(--gray-400, #898989);
+
+  text-decoration: line-through;
+}
+.description {
+  color: var(--gray-400, #898989);
+}
+.labelList {
+  width: 100%;
+  display: flex;
+  gap: 4px;
+}
+.label {
+  color: var(--content, #333);
+  font-weight: 600;
+  padding: 5px;
+  background-color: #e1e1e1;
+  border-radius: 4px;
+}
+.label.only {
+  color: var(--primary, #5f0080);
+  font-weight: 600;
+}
+p {
+  margin: 0;
+}
+.cart {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 265px;
+  right: 10px;
+  cursor: pointer;
+}
